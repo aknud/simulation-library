@@ -1,0 +1,25 @@
+.av-main {
+    background: $main-bg;
+    height: 100vh;
+}
+.av-tan {
+    background: $tan-bg;
+    @include width-height(1000px, 600px);
+    margin: auto;
+    font-family: $title-font;
+    border-radius: 10px;
+}
+.av-black{
+    background: $grey-bg;
+    font-family: $main-font;
+    color: $words;
+}
+.av-book {
+    @include width-height(100px, 100px);
+    margin: auto;
+}
+.btn {
+    @include btn-style;
+    border-radius: 4px;
+    border-style: none;
+}

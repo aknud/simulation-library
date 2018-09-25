@@ -1,0 +1,16 @@
+@mixin btn-style($height: 34px, $bg: $red-btn, $color: $tan-bg){
+    height: $height;
+    background: $bg;
+    color: $color;
+}
+
+@mixin flexSetUp($justify: flex-start, $align: flex-start, $direction: row) {
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+ }
+
+ @mixin width-height($width, $height) {
+    width: $width;
+    height: $height;
+ }
