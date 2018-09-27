@@ -1,6 +1,7 @@
 require('dotenv').config();
 const express = require('express');
 const session = require('express-session');
+const massive = require('massive');
 const bodyParser = require('body-parser');
 const ctrl = require('./controllers');
 
@@ -22,7 +23,7 @@ massive(CONNECTION_STRING).then(db =>{
 })
 
 app.post('/api/auth/login', ctrl.login);
-app.post('/api/auth/login', ctrl.register);
+app.post('/api/auth/register', ctrl.register);
 app.post('/api/auth/logout', ctrl.logout);
  
 app.listen(SERVER_PORT, () => console.log(`Listening on ${SERVER_PORT}`))
